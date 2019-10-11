@@ -1,1 +1,25 @@
 // Mixins Here
+
+.navtxt() {
+  text-decoration: none;
+  padding: 15px;
+  color: black;
+  font-size: 13px;
+}
+
+.curvature() {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.button(@bgc, @radius, @txtcolor) {
+  background-color: @bgc;
+  border-radius: @radius;
+  color: @txtcolor;
+  padding: 5px 15px;
+  &:hover {
+    background-color: teal;
+    color: orangered;
+    transition: 300ms ease;
+  }
+}
